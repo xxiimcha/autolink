@@ -1,0 +1,37 @@
+name: capstone_app
+description: "capstone"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.2.2  # Correctly added under dependencies
+  shared_preferences: ^2.3.3  # Added shared_preferences for session management
+  provider: ^6.0.3  # Added provider for state management (optional, but useful)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+
+flutter:
+  uses-material-design: true
+
+  # Adding assets
+  assets:
+    - assets/
+    - assets/images/
+    - assets/images/repair1.jpg
+    - assets/images/shop1.jpg
+    - assets/images/tow1.jpg
+    - assets/images/background.jpg
+
+
